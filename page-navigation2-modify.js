@@ -1,4 +1,4 @@
-  <![CDATA[*/
+  /*<![CDATA[*/
     if (typeof firstText == "undefined") firstText = "First"; 
     if (typeof lastText == "undefined") lastText = "Last";
     var noPage;
@@ -194,4 +194,4 @@
         }
         location.href = pAddress
     }
-  /*]]>
+  /*]]>*/

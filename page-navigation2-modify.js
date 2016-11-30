@@ -139,7 +139,7 @@
               }
             }
         }
-        if (thisUrl.indexOf("?q=") == -1 && thisUrl.indexOf(".html") == -1) {
+        if (thisUrl.indexOf("?q=") == -1 && thisUrl.indexOf(".html") == -1 && thisUrl.indexOf("?updated-min") == -1) {
             if (thisUrl.indexOf("/search/label/") == -1) {
                 currentPage = "page";
                 if (urlactivepage.indexOf("#PageNo=") != -1) {

@@ -129,6 +129,9 @@
     function pagecurrentg() {
         var thisUrl = urlactivepage;
         if (thisUrl.indexOf("/search/label/") != -1) {
+        	if (thisUrl.indexOf("?m=1") != -1) {
+        		postLabel = thisUrl.substring(thisUrl.indexOf("/search/label/") + 14, thisUrl.indexOf("?m=1"));
+          } else {
             if (thisUrl.indexOf("?updated-max") != -1) {
                 postLabel = thisUrl.substring(thisUrl.indexOf("/search/label/") + 14, thisUrl.indexOf("?updated-max"));
             } else {
@@ -137,7 +140,8 @@
               } else {
                 postLabel = thisUrl.substring(thisUrl.indexOf("/search/label/") + 14, thisUrl.indexOf("?&max"));
               }
-            }
+            }          	
+          }
         }
         if (thisUrl.indexOf("?q=") == -1 && thisUrl.indexOf(".html") == -1 && thisUrl.indexOf("?updated-min") == -1) {
             if (thisUrl.indexOf("/search/label/") == -1) {
